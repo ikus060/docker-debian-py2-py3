@@ -1,4 +1,4 @@
-FROM buildpack-deps:jessie-scm
+FROM buildpack-deps:jessie
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
                 python python-dev python-pip python-setuptools python3 python3-dev python3-pip python3-setuptools \
