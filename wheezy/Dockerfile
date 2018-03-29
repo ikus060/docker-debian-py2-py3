@@ -2,7 +2,7 @@ FROM buildpack-deps:wheezy
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
                 python python-dev python-pip python-setuptools python3 python3-dev python3-pip python3-setuptools \
-    && pip2 install pip setuptools tox nose coverage wheel twine --upgrade \
+    && pip install pip setuptools tox nose coverage wheel twine --upgrade \
     && pip3 install pip setuptools tox nose coverage wheel twine --upgrade \
     && rm -rf /var/lib/apt/lists/*
 
